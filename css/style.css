@@ -1,0 +1,194 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: white; /*color del fondo del escudo*/
+    text-align: right;
+    display: flex;
+    align-items:end;
+
+
+}
+
+header a img{
+    /*altura escudo*/
+    width: 70%;
+    display: inline-block;
+    position: sticky;
+}
+
+header nav ul{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(216, 202, 108);
+    display: flex;
+    gap: 1rem;
+    padding-right: 40px;
+}
+
+
+header nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*css para index.html*/
+
+.div-escuela{
+    /*coloco la imagen de fondo en el nombre */
+    /*se debe ver el arbol debajo de las letras*/
+    height: 300px;
+    background-image: url("../img/patiocolegio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*margenes para separacion y union*/
+    margin: 20px;
+    margin-top: 0px;
+}
+
+main div h1{
+    /*estilo letras nombre escuela*/
+    color: #5eaedc;
+    text-shadow: 3px 3px 3px black;
+    margin: 20px;
+}
+
+.contenedor{
+    
+    margin: 20px;
+    background-color: #4fb9f6;
+    text-align: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+footer{
+    background-color: #BCB3AA;
+    padding: 10px;
+}
+
+.flecha{
+   
+    text-align: center;
+}
+.flecha img{
+    width: 30px;
+
+}
+
+.icon-whatsapp img{
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+
+/*css del horarios.html*/
+
+.main-horarios{
+    /*imagen de fondo para las tablas con los horarios*/
+    background-image: url("../img/aula.jpg");
+    background-size: cover;
+
+}
+
+.section-tablas{
+    text-align: center;
+}
+
+.tablas{
+    /*para que las columnas tengas el mismo ancho*/
+    table-layout: fixed;
+    width: 100%;
+    
+    max-width: 800px;
+    margin: auto;
+    /*para que las celdas estén unidas*/
+    border-collapse: collapse;
+    /*da espacio entre tabla y prox h3 de siguiente tabla*/
+    margin-bottom: 20px;
+}
+
+.tablas tr td{
+    border: 1px solid black;
+    
+}
+
+
+/*css de efemerides.html*/
+.main-efeme{
+    /*color de fondo del main*/
+    background-color: #4A98C4;
+}
+
+.div-calendario{
+    background-color: #BCB3AA;
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    border: 3px solid gray;
+    max-width: 600px;
+
+}
+.img-calendario{
+    width: 50px;
+}
+
+
+.descripcion-efeme{
+    font-style:oblique;
+
+}
+
+/*css del contacto.html*/
+
+.contactos{
+    text-align: center;
+}
+.contactos-2, .contactos-1 {
+    
+    width: 400px;
+    height: 120px;
+    
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    border: 10px;
+}
+
+.contactos-2 img{
+    /*modifico tamaño de imagen de whatsapp*/
+    width: 30px;
+}
+
+.mapa{
+    background-color: #4fb9f6;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.mapa div{
+    margin: 20px;
+}
