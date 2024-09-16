@@ -47,7 +47,21 @@ main{
     background-color: #E2DAD6;
 }
 
+.page-active{
+    color: #E2DAD6;
+}
+.page-active:hover{
+    color: #E2DAD6;
+}
 
+/* acciones con el mouse */
+.mouse:hover{
+    background-color: #6482AD;
+}
+
+.mouse:active{
+    color: #E2DAD6;
+}
 
 /*css para index.html*/
 
@@ -124,7 +138,7 @@ footer{
 }
 
 
-/*css del horarios.html*/
+/*css del cambios-informativos.html*/
 
 .main-horarios{
     /*imagen de fondo para las tablas con los horarios*/

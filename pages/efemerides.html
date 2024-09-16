@@ -3,27 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- link con css -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Efemerides - 20 de Junio</title>
 </head>
 <body>
-    <header id="arriba-efemerides">
-        <a href="../index.html">
-            <img src="../img/escudo.png" alt="logo del menu">
-        </a>
-        <!-- menu de navegacion -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="escuela.html">Escuela</a></li>
-                <li><a href="efemerides.html">Efemerides</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            
-        </nav>
-    
+    <header id="arriba-index" class="container-fluid">
+        <div class="row">
+            <div class=" text-center">
+                <a href="index.html" ></a>
+                    <img class="imagen-logo" src="../img/escudo.png" alt="logo del menu">
+                </a>
+            </div>
+
+            <!-- menu de navegacion de bt -->
+            <nav class=" navbar navbar-expand-lg color2-bg marg-0">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">20 de Junio</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link mouse">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="escuela.html" class="nav-link mouse" >Escuela</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a href="efemerides.html" class="nav-link disable page-active" >Efemerides</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a href="campos-formativos.html" class="nav-link mouse">Campos Formativos</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a href="contacto.html" class="nav-link mouse">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -83,5 +107,7 @@
             </a>
          </div>
     </footer>
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
