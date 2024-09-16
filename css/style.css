@@ -20,9 +20,11 @@ body{
 #F5EDED
 */
 
-header div a img{
-    width: 100%;
+.imagen-logo{
+    width: 80%;
 }
+
+/* clases para los colores */
 .color1-bg{
     background-color: #6482AD;
 }.color2-bg{
@@ -32,6 +34,19 @@ header div a img{
 }.color4-bg{
     background-color: #E2DAD6;
 }
+
+
+/* margen del menú 
+.marg-0{
+    margin-top: 150px;
+}
+*/
+
+/* fondo color main */
+main{
+    background-color: #E2DAD6;
+}
+
 
 
 /*css para index.html*/
