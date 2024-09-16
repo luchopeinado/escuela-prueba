@@ -11,12 +11,7 @@ body{
     background-color: #E2DAD6;
 }
 
-header{
-    background-color: none; /*color del fondo del escudo*/
-    text-align: right;
-    display:flex;
-    align-items:end;
-}
+
 
 /*COLORES:
 #6482AD
@@ -25,31 +20,18 @@ header{
 #F5EDED
 */
 
-header a img{
-    /*altura escudo*/
-    width: 70%;
-    position: relative;
-    top: 50px;
-   
+header div a img{
+    width: 100%;
 }
-
-
-header nav ul{
-    list-style: none;
-    margin: 5px;
-    padding: 5px;
+.color1-bg{
+    background-color: #6482AD;
+}.color2-bg{
     background-color: #7FA1C3;
-    display: flex;
-    gap: 1rem;
-    padding-right: 40px;
+}.color3-bg{
+    background-color: #E2DAD6;
+}.color4-bg{
+    background-color: #E2DAD6;
 }
-
-
-header nav li a{
-    text-decoration: none;
-    color:#F5EDED;
-}
-
 
 
 /*css para index.html*/
