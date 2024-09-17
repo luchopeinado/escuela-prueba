@@ -24,7 +24,7 @@ body{
     width: 80%;
 }
 
-/* clases para los colores */
+/* clases para los colores https://colorhunt.co/palette/6482ad7fa1c3e2dad6f5eded*/
 .color1-bg{
     background-color: #6482AD;
 }.color2-bg{
@@ -32,7 +32,7 @@ body{
 }.color3-bg{
     background-color: #E2DAD6;
 }.color4-bg{
-    background-color: #E2DAD6;
+    background-color: #F5EDED;
 }
 
 
@@ -47,14 +47,13 @@ main{
     background-color: #E2DAD6;
 }
 
+/* acciones del menu */
 .page-active{
     color: #E2DAD6;
 }
 .page-active:hover{
     color: #E2DAD6;
 }
-
-/* acciones con el mouse */
 .mouse:hover{
     background-color: #6482AD;
 }
@@ -96,25 +95,7 @@ main div h1{
     margin: 20px;
 }
 
-.contenedor{
-    
-    margin: 20px;
-    background-color: #F5EDED;
-    text-align: center;
 
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    justify-content: center;
-
-}
-
-.contenedor img{
-    width: 80%;
-}
-.contenedor h3{
-    margin-top: 15px;
-}
 footer{
     background-color: #7FA1C3;
     padding: 10px;
@@ -137,14 +118,43 @@ footer{
 
 }
 
+/*css comunes entre escuela e index*/
+.foto-html{
+    width: 90%;
+}
+.detalle-foto{
+    font-size:x-small;
+    margin: 0% 5%;
+    justify-content: center;
+
+}
+
+
+
+/*css de escuela.html*/
+.contenedor{
+    
+    margin: 20px;
+    background-color: #F5EDED;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.contenedor h3{
+    margin-top: 15px;
+}
+
+
 
 /*css del cambios-informativos.html*/
-
 .main-horarios{
     /*imagen de fondo para las tablas con los horarios*/
     background-image: url("../img/aula.jpg");
     background-size: cover;
-
 }
 
 .section-tablas{
@@ -154,7 +164,7 @@ footer{
 .tablas{
     /*para que las columnas tengas el mismo ancho*/
     table-layout: fixed;
-    width: 100%;
+    width: 80%;
     
     max-width: 800px;
     margin: auto;
@@ -173,7 +183,7 @@ footer{
 /*css de efemerides.html*/
 .main-efeme{
     /*color de fondo del main*/
-    background-color: #4A98C4;
+    
 }
 
 .div-calendario{
@@ -181,22 +191,24 @@ footer{
     display: inline-block;
     text-align: center;
     margin: 20px;
+    padding: 10px;
     border: 3px solid gray;
-    max-width: 600px;
+}
 
+.div-calendario h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .img-calendario{
-    width: 50px;
+    width: 80%;
 }
-
-
 .descripcion-efeme{
     font-style:oblique;
-
+    font-size:larger;
 }
 
-/*css del contacto.html*/
 
+
+/*css del contacto.html*/
 .contactos{
     text-align: center;
 }
@@ -218,15 +230,15 @@ footer{
 }
 
 .mapa{
-    background-color: #4fb9f6;
+    /*background-color: #4fb9f6;*/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 
 }
 
 .mapa div{
-    margin: 10px;
+   padding: 10px;
 }
