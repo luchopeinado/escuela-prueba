@@ -64,7 +64,7 @@ main{
 
 /*css para index.html*/
 
-.div-escuela{
+.div-index{
     /*coloco la imagen de fondo en el nombre */
     /*se debe ver el arbol debajo de las letras*/
     height: 300px;
@@ -94,7 +94,9 @@ main div h1{
     text-shadow: 3px 3px 3px black;
     margin: 20px;
 }
-
+main div h3 span{
+    display: block;
+}
 
 footer{
     background-color: #7FA1C3;
@@ -121,6 +123,7 @@ footer{
 /*css comunes entre escuela e index*/
 .foto-html{
     width: 90%;
+    
 }
 .detalle-foto{
     font-size:x-small;
@@ -129,19 +132,21 @@ footer{
 
 }
 
-
-
-/*css de escuela.html*/
 .contenedor{
     
     margin: 20px;
     background-color: #F5EDED;
     text-align: center;
+    border-radius: 1rem;     /*borde redondo*/
+    border: 3px solid #7FA1C3;
 
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     justify-content: center;
+    align-items: center;
+    flex-direction: column; /*queda uno abajo de otro*/
+    gap: 1rem;
 }
 
 .contenedor h3{
@@ -150,21 +155,25 @@ footer{
 
 
 
-/*css del cambios-informativos.html*/
-.main-horarios{
-    /*imagen de fondo para las tablas con los horarios*/
-    background-image: url("../img/aula.jpg");
-    background-size: cover;
+/*css de escuela.html*/
+.main-escuela{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 0.5fr);
 }
 
-.section-tablas{
-    text-align: center;
+
+/*css del campos-informativos.html*/
+.main-horarios{
+    /*imagen de fondo para los campos informativos*/
+    background-image: url("../img/galeria-c-formativos.jpg");
+    background-size: cover;
 }
 
 .tablas{
     /*para que las columnas tengas el mismo ancho*/
     table-layout: fixed;
-    width: 80%;
+    width: 90%;
     
     max-width: 800px;
     margin: auto;
@@ -176,23 +185,28 @@ footer{
 
 .tablas tr td{
     border: 1px solid black;
-    
 }
+
 
 
 /*css de efemerides.html*/
-.main-efeme{
-    /*color de fondo del main*/
-    
-}
 
 .div-calendario{
     background-color: #BCB3AA;
-    display: inline-block;
     text-align: center;
-    margin: 20px;
-    padding: 10px;
     border: 3px solid gray;
+    border-radius: 1rem;    /*borde redondo*/
+
+    display: flex;  /*convierto en flex*/
+    flex-direction: column;   /*pongo como columnas*/
+    align-items: center;
+    gap: 1rem; /*separa contenido*/
+    justify-content: center;
+    
+    /*separacion*/
+    margin: 10px;
+    padding: 10px;
+
 }
 
 .div-calendario h2{
@@ -237,8 +251,43 @@ footer{
     text-align: center;
     padding: 10px;
 
+
 }
 
 .mapa div{
    padding: 10px;
+}
+
+
+
+
+@media screen and (min-width:1024px){
+
+    /*general*/
+    .imagen-logo{
+        width: 20%;
+    }
+    
+    /*html index*/
+    .main-index{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*html escuela*/
+    .main-escuela{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+
+    /*html efemerides*/
+    .main-efeme{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        
+    }
+    
 }
